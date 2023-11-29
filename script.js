@@ -7,7 +7,7 @@ const uni=function uni(codePt) {
         return String.fromCharCode(codePt);
     }
 }
-const In=document.getElementById('input0'),out=document.getElementById('output')/*,input0value=function value(){
+const In=document.getElementById('input0'),out=document.getElementById('output');/*,input0value=function value(){
   return In.value
 }*/
 In.addEventListener("keyup", function(event) {

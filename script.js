@@ -10,6 +10,15 @@ const uni=function uni(codePt) {
 const In=document.getElementById('input0'),out=document.getElementById('output');/*,input0value=function value(){
   return In.value
 }*/
+ In.addEventListener('input', (event) => {
+        const thisTarget = event.target;
+        out.value=uni(In.value)
+    });
+
+    In.addEventListener('change', (event) => {
+        const thisTarget = event.target;
+        out.value=uni(In.value)
+    });
 In.addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {

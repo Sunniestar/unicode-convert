@@ -21,7 +21,7 @@ const In=document.getElementById('input0'),out=document.getElementById('output')
     });
 In.addEventListener("keyup", function(event) {
     event.preventDefault();
-    if (event.keyCode !== 65 && event.keyCode !== 66 && event.keyCode !== 67 && event.keyCode !== 68 && event.keyCode !== 69 && event.keyCode !== 70 && event.keyCode !== 48 && event.keyCode !== 57 && event.keyCode !== 49 && event.keyCode !== 50 && event.keyCode !== 51 && event.keyCode !== 52 && event.keyCode !== 53 && event.keyCode !== 54 && event.keyCode !== 55 && event.keyCode !== 56) {
+    if (event.Code !== "KeyA" && event.Code !== "KeyB" && event.Code !== "KeyC" && event.Code !== "KeyD" && event.Code !== "KeyE" && event.Code !== "KeyF" && event.Code !== "Digit0" && event.Code !== "Digit1"  && event.Code !== "Digit2" && event.Code !== "Digit3" && event.Code !== "Digit4" && event.Code !== "Digit5" && event.Code !== "Digit6" && event.Code !== "Digit7" && event.Code !== "Digit8" && event.Code !== "Digit9") {
         In.value=In.value.substring(0,In.value.Length-1)
     }
 });

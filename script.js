@@ -21,7 +21,7 @@ const In=document.getElementById('input0'),out=document.getElementById('output')
     });
 In.addEventListener("keyup", function(event) {
     event.preventDefault();
-    if (event.keyCode !== 65 || event.keyCode !== 66 || event.keyCode !== 67 || event.keyCode !== 68 || event.keyCode !== 69 || event.keyCode !== 70 || event.keyCode !== 48 || event.keyCode !== 57 || event.keyCode !== 49 || event.keyCode !== 50 || event.keyCode !== 51 || event.keyCode !== 52 || event.keyCode !== 53 || event.keyCode !== 54 || event.keyCode !== 55 || event.keyCode !== 56) {
+    if (event.keyCode !== 65 && event.keyCode !== 66 && event.keyCode !== 67 && event.keyCode !== 68 && event.keyCode !== 69 && event.keyCode !== 70 && event.keyCode !== 48 && event.keyCode !== 57 && event.keyCode !== 49 && event.keyCode !== 50 && event.keyCode !== 51 && event.keyCode !== 52 && event.keyCode !== 53 && event.keyCode !== 54 && event.keyCode !== 55 && event.keyCode !== 56) {
         In.value=In.value.substring(0,In.value.Length-1)
     }
 });

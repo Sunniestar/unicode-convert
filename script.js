@@ -7,12 +7,12 @@ const uni=function uni(codePt) {
         return String.fromCharCode(codePt);
     }
 }
-const input0=document.getElementById('input0'),output0=document.getElementById('output'),input0value=function value(){
+const In=document.getElementById('input0'),output0=document.getElementById('output'),input0value=function value(){
   return document.getElementById('input0').value
 }
-document.getElementById("input0").addEventListener("keyup", function(event) {
+document.getElementById("In").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
-        output.value=uni(input0value())
+        output0.value=uni(input0value())
     }
 });

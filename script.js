@@ -8,13 +8,14 @@ const uni=function uni(codePt) {
     }
 }
 const input0=document.getElementById('input0')
-const output=document.getElementById('output')
+const output0=document.getElementById('output')
 const input0value=function value(){
   return document.getElementById('input0').value
 }
 document.getElementById("input0").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
+        output0.value=uni(input0value())
         document.getElementById("input0").click();
     }
 });

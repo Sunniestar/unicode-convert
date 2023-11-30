@@ -21,7 +21,7 @@ const In=document.getElementById('input0'),out=document.getElementById('output')
     });
 In.addEventListener("keyup", function(event) {
     event.preventDefault();
-    if (event.Code !== "KeyA" && event.Code !== "KeyB" && event.Code !== "KeyC" && event.Code !== "KeyD" && event.Code !== "KeyE" && event.Code !== "KeyF" && event.Code !== "Digit0" && event.Code !== "Digit1"  && event.Code !== "Digit2" && event.Code !== "Digit3" && event.Code !== "Digit4" && event.Code !== "Digit5" && event.Code !== "Digit6" && event.Code !== "Digit7" && event.Code !== "Digit8" && event.Code !== "Digit9") {
-        In.value=In.value.substring(0,In.value.Length-1)
+    if (event.code !== "KeyA" && event.code !== "KeyB" && event.code !== "KeyC" && event.code !== "KeyD" && event.code !== "KeyE" && event.code !== "KeyF" && event.code !== "Digit0" && event.code !== "Digit1"  && event.code !== "Digit2" && event.code !== "Digit3" && event.code !== "Digit4" && event.code !== "Digit5" && event.code !== "Digit6" && event.code !== "Digit7" && event.code !== "Digit8" && event.code !== "Digit9" && event.code !== "Backspace" && event.code !== "KeyX") {
+        In.value=In.value.substring(0,In.value.length-1)
     }
 });

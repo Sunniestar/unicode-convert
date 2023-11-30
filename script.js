@@ -12,11 +12,17 @@ const In=document.getElementById('input0'),out=document.getElementById('output')
 }*/
  In.addEventListener('input', (event) => {
         const thisTarget = event.target;
+    if (In.value.length<=1){
+			In.value='0x'
+		}
         out.value=uni(In.value)
     });
 
     In.addEventListener('change', (event) => {
         const thisTarget = event.target;
+        if (In.value.length<=1){
+			In.value='0x'
+		}
         out.value=uni(In.value)
     });
 In.addEventListener("keyup", function(event) {

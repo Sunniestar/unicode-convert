@@ -27,7 +27,7 @@ const In=document.getElementById('input0'),out=document.getElementById('output')
     });
 In.addEventListener("keyup", function(event) {
     event.preventDefault();
-    if (event.code !== "KeyA" && event.code !== "KeyB" && event.code !== "KeyC" && event.code !== "KeyD" && event.code !== "KeyE" && event.code !== "KeyF" && event.code !== "Digit0" && event.code !== "Digit1"  && event.code !== "Digit2" && event.code !== "Digit3" && event.code !== "Digit4" && event.code !== "Digit5" && event.code !== "Digit6" && event.code !== "Digit7" && event.code !== "Digit8" && event.code !== "Digit9" && event.code !== "Backspace" && event.code !== "KeyX") {
+    if (event.code !== "KeyA" && event.code !== "KeyB" && event.code !== "KeyC" && event.code !== "KeyD" && event.code !== "KeyE" && event.code !== "KeyF" && event.code !== "Digit0" && event.code !== "Digit1"  && event.code !== "Digit2" && event.code !== "Digit3" && event.code !== "Digit4" && event.code !== "Digit5" && event.code !== "Digit6" && event.code !== "Digit7" && event.code !== "Digit8" && event.code !== "Digit9" && event.code !== "Backspace" && event.code !== "KeyX" && event.code !== "ArrowLeft" && event.code !== "ArrowUp" && event.code !== "ArrowDown" && event.code !== "ArrowRight") {
         In.value=In.value.substring(0,In.value.length-1)
     }
 });
